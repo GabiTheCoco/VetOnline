@@ -1,13 +1,15 @@
 .banner-section img{
     width: 100%;
     height: auto;
+    position: relative;
 }
 
 .titulo-banner{
     position: absolute;
-    top: 20px;
+    top: 10%;
     color: var(--fondo-nav);
     padding-top: 1em;
     font-weight: 800;
     font-size: 2em;
+    z-index: 1000;
 }

@@ -1,7 +1,7 @@
 :root{
     --fondo-nav: #8444a2;
     --fondo-main: #eeeded;
-    --btn-primary: #9debf5;
+    --btn-primary: #3993DD;
     --btn-secondary: #795286;
 }
 
@@ -21,7 +21,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    width: 80%;
+    width: 70%;
 }
 
 .nav-options{
