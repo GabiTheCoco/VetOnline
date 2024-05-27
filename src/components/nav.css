@@ -1,0 +1,42 @@
+:root{
+    --fondo-nav: #8444a2;
+    --fondo-main: #eeeded;
+    --btn-primary: #9debf5;
+    --btn-secondary: #795286;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fondo-nav);
+    color: white;
+    height: 5%;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 80%;
+}
+
+.nav-options{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 20%;
+}
+
+.logo-container{
+    width: 150px;
+    height: auto;
+}
+
+.logo-container img{
+    max-width: 100%;
+    max-height: 100%;
+}

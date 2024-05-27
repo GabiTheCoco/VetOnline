@@ -1,0 +1,22 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-section{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.form-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+}
+
