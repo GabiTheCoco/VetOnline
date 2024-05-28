@@ -1,7 +1,7 @@
 :root{
     --fondo-nav: #8444a2;
     --fondo-main: #eeeded;
-    --btn-primary: #3993DD;
+    --btn-primary: #00a8e8;
     --btn-secondary: #795286;
 }
 
@@ -29,6 +29,7 @@ nav{
     justify-content: space-between;
     list-style: none;
     width: 20%;
+    cursor: pointer;
 }
 
 .logo-container{
@@ -39,4 +40,5 @@ nav{
 .logo-container img{
     max-width: 100%;
     max-height: 100%;
+    cursor: pointer
 }

@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="./src/components/main.css">
         <link rel="stylesheet" href="./src/components/main-banner.css">
         <link rel="stylesheet" href="./src/components/main-form.css">
+        <link rel="stylesheet" href="./src/components/footer.css">
     </head>
     <body>
         <header>
@@ -38,7 +39,7 @@
                     </div>
                     <form class="form">
                         <div class="form-body">
-                            <div class="form-left">
+                            <div class="form-top">
                                 <div class="items-container">
                                     <label>Mascota</label>
                                     <div class="items-list">
@@ -53,37 +54,58 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="edad-container">
-                                    <label>Edad aproximada</label>
+                                <div class="input-container">
+                                    <label>Nombre</label>
                                     <input type="text">
                                 </div>
-                                <div class="carac-container">
-                                    <label>Caracteristicas</label>
+                                <div class="input-container">
+                                    <label>Apodo</label>
                                     <input type="text">
                                 </div>
                             </div>
                             <div class="form-center">
-                                <input type="text">
-                                <input>
-                                <input>
+                                <div class="input-container">
+                                    <label>Edad aproximada</label>
+                                    <input type="text">
+                                </div>
+                                <div class="input-container">
+                                    <label>Sexo</label>
+                                    <input type="text">
+                                </div>
+                                <div class="input-container">
+                                    <label>Descripción Física</label>
+                                    <input type="text">
+                                </div>
                             </div>
-                            <div class="form-right">
-                                <input type="text">
-                                <input>
-                                <input type="text">
+                            <div class="form-bottom">                     
+                                <div class="input-container">
+                                    <label>Caracteristicas</label>
+                                    <select class="opciones">
+                                        <option>Seleccione una</option>
+                                    </select>
+                                    <label class="btn-carac"> + Añadir característica</label>
+                                </div>
+                                <div class="input-carac">
+                                    <label> </label>
+                                    <input type="text" placeholder="Ingresar característica">
+                                </div>
+                                <div class="input-file">
+                                    <label>Fotos</label>
+                                    <input type="file">
+                                    <label class="btn-file"> + Añadir Foto<label/>
+                                </div>
                             </div>
                         </div>
                         <div class="form-rules">
-                            <p>Hola que tal</p>
-                            <button>Enviar</button>
+                            <p>Los campos marcados con (*) son obligatorios</p>
+                            <button type="button">GUARDAR</button>
                         </div>
                     </form>
-                    
                 </div>
             </section>
         </main>
         <footer>
-
+            <img class="footer-img" src="./assets/img/Diseño sin título.png">
         </footer>
     </body>
 </html>

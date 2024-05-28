@@ -1,3 +1,13 @@
+.form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+    border-radius: 1.5em;
+    padding: 1em;
+}
+
 
 .form-container{
     display: flex;
@@ -5,7 +15,7 @@
     align-items: center;
     justify-content: space-between;
     width: 70%;
-    height: 70vh;
+    height: 75vh;
 }
 
 .form-header{
@@ -48,48 +58,123 @@
     background: transparent;
 }
 
-.form{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    height: 80%;
-    width: 100%;
-}
-
 .form-body{
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 10000;
 }
 
-.form-left, .form-center, .form-right{
+.form-top, .form-center, .form-bottom{
     display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 90%;
+    width: 90%;
+    height: 33%;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.items-container, .edad-container, .carac-container{
+.items-container{
+    height: 100%;
+    width: 95%;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     justify-content: space-evenly;
-    height: 33%;
-    width: 100%;
 }
 
 .items-list{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    font-size: 1em;
+    padding-bottom: .5em;
 }
+
+
+.input-container, .input-carac{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5em;
+    height: 100%;
+    width: 95%;
+}
+
+
+
+.items-container label, .input-container label, .input-file label, .input-carac label{
+    font-size: .8em;
+    padding-left: .3em;
+}
+
+.input-container input, .opciones{
+    background-color: var(--fondo-main);
+    border-radius: 2em;
+    outline: none;
+    border: none;
+    height: 2.5em;
+    padding: 1em;
+    width: 90%;
+}
+
+.input-carac input{
+    background-color: white;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(180, 180, 180);
+    height: 2.5em;
+    padding: 1em;
+    width: 90%;
+}
+
+.opciones{
+    padding: .5em;
+}
+
+.input-file{
+    height: 100%;
+    width: 95%;
+    gap: .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.input-file input{
+    width: 90%;
+}
+
+.btn-file, .btn-carac{
+    align-self: last baseline;
+    padding-right: 2em;
+    cursor: pointer;
+    color: var(--btn-primary)
+}
+
 
 .form-rules{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1em;
+    padding: .5em 3.5em;
+}
+
+.form-rules p{
+    font-size: .8em;
+    color: var(--fondo-nav);
+}
+
+.form-rules button{
+    width: 8em;
+    height: 2.5em;
+    background-color: var(--btn-primary);
+    border-radius: 1.5em;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    color: white;
 }
