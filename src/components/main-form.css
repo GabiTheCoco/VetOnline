@@ -34,6 +34,7 @@
 
 .form-title{
     color: var(--fondo-nav);
+    /* color: white; */
     font-size: 2em;
     font-weight: 800;
     border-radius: 1em;
@@ -43,7 +44,7 @@
 .title-underline{
     width: 3em;
     height: auto;
-    z-index: 10000;
+    z-index: 12;
 }
 
 .form-button{
