@@ -12,8 +12,13 @@ header{
     align-items: center;
     background-color: var(--fondo-nav);
     color: white;
-    height: 5%;
+    height: 8%;
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+    transition: top .3s;
 }
 
 nav{

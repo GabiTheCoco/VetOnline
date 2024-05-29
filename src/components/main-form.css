@@ -105,7 +105,6 @@
 }
 
 
-
 .items-container label, .input-container label, .input-file label, .input-carac label{
     font-size: .8em;
     padding-left: .3em;
@@ -142,11 +141,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 1000;
+    z-index: 20;
 }
 
 .input-file input{
     width: 90%;
+}
+
+.required{
+    color: var(--fondo-nav)
 }
 
 .btn-file, .btn-carac{

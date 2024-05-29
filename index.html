@@ -4,9 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Vet Online - Tu veterinaria</title>
+        <link rel="icon" href="/assets/img/logo.png" type="image/x-icon"> 
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="./src/components/nav.css">
         <link rel="stylesheet" href="./src/components/main.css">
@@ -18,20 +19,22 @@
         <header>
             <nav>
                 <div class="logo-container">
-                    <img class="logo" src="./assets/img/logo.png" alt="Logo VetOnline" />
+                    <a href="#inicio">
+                        <img  class="logo" src="./assets/img/logo.png" alt="Logo VetOnline" />
+                    </a>
                 </div>
                 <ul class="nav-options">
-                    <li>Mascotas</li>
-                    <li>Contacto</li>
+                    <a href="#mascotas"><li>Mascotas</li></a>
+                    <a href="#contacto"><li>Contacto</li></a>
                 </ul>
             </nav>
         </header>
-        <main>
+        <main id="inicio">
             <section class="banner-section">
                 <h1 class="titulo-banner">Bienvenidos!</h1>
                 <img src="assets/img/imagen.png" alt="Banner de mascotas">
             </section>
-            <section class="form-section">
+            <section class="form-section" id="mascotas">
                 <div class="form-container">
                     <div class="form-header">
                         <div class="title-container">
@@ -44,47 +47,47 @@
                         <div class="form-body">
                             <div class="form-top">
                                 <div class="items-container">
-                                    <label>Mascota</label>
+                                    <label>Mascota<span class="required">*</span></label>
                                     <div class="items-list">
                                         <label>
-                                            <input type="radio" name="animal" value="perros">
+                                            <input type="radio" name="animal" value="gatos" checked>
                                             Gato
                                         </label>
                                         <br>
                                         <label>
-                                            <input type="radio" name="animal" value="gatos">
+                                            <input type="radio" name="animal" value="perros">
                                             Perro
                                         </label>
                                     </div>
                                 </div>
                                 <div class="input-container">
-                                    <label>Nombre</label>
-                                    <input type="text">
+                                    <label>Nombre<span class="required">*</span></label>
+                                    <input type="text" required>
                                 </div>
                                 <div class="input-container">
-                                    <label>Apodo</label>
-                                    <input type="text">
+                                    <label>Apodo<span class="required">*</span></label>
+                                    <input type="text" required>
                                 </div>
                             </div>
                             <div class="form-center">
                                 <div class="input-container">
-                                    <label>Edad aproximada</label>
-                                    <input type="text">
+                                    <label>Edad aproximada<span class="required">*</span></label>
+                                    <input type="text" required>
                                 </div>
                                 <div class="input-container">
                                     <label>Sexo</label>
                                     <input type="text">
                                 </div>
                                 <div class="input-container">
-                                    <label>Descripción Física</label>
-                                    <input type="text">
+                                    <label>Descripción Física<span class="required">*</span></label>
+                                    <input type="text" required>
                                 </div>
                             </div>
                             <div class="form-bottom">                     
                                 <div class="input-container">
                                     <label>Caracteristicas</label>
                                     <select class="opciones">
-                                        <option>Seleccione una</option>
+                                        <option>Color principal</option>
                                     </select>
                                     <label class="btn-carac"> + Añadir característica</label>
                                 </div>
@@ -112,7 +115,7 @@
                 <!-- <img class="footer-img" src="./assets/img/footer.png"> -->
                 <img class="footer-img" src="./assets/svg/footer.svg">
             </div>
-            <div class="footer-content">
+            <div class="footer-content"  id="contacto">
                 <div class="footer-title">
                     <h1 class="footer-title-h1">Contactanos</h1>
                     <img  class="footer-underline" src="./assets/svg/vineta-blanca.svg"></img>
@@ -144,5 +147,7 @@
                 </p>
             </div>
         </footer>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script defer src="script.js" type="module"></script>
     </body>
 </html>
