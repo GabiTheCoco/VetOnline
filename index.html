@@ -43,70 +43,74 @@
                         </div>
                         <button type="button" class="form-button">INGRESAR MASCOTA</button>
                     </div>
-                    <form class="form">
-                        <div class="form-body">
-                            <div class="form-top">
-                                <div class="items-container">
-                                    <label>Mascota<span class="required">*</span></label>
-                                    <div class="items-list">
-                                        <label>
-                                            <input type="radio" name="animal" value="gatos" checked>
-                                            Gato
-                                        </label>
-                                        <br>
-                                        <label>
-                                            <input type="radio" name="animal" value="perros">
-                                            Perro
-                                        </label>
+
+                    <div class="form-screen">
+                        <form class="form">
+                            <div class="form-body">
+                                <div class="form-top">
+                                    <div class="items-container">
+                                        <label>Mascota<span class="required">*</span></label>
+                                        <div class="items-list">
+                                            <label>
+                                                <input type="radio" name="animal" value="gatos" checked>
+                                                Gato
+                                            </label>
+                                            <br>
+                                            <label>
+                                                <input type="radio" name="animal" value="perros">
+                                                Perro
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="input-container">
+                                        <label>Nombre<span class="required">*</span></label>
+                                        <input type="text" required>
+                                    </div>
+                                    <div class="input-container">
+                                        <label>Apodo<span class="required">*</span></label>
+                                        <input type="text" required>
                                     </div>
                                 </div>
-                                <div class="input-container">
-                                    <label>Nombre<span class="required">*</span></label>
-                                    <input type="text" required>
+                                <div class="form-center">
+                                    <div class="input-container">
+                                        <label>Edad aproximada<span class="required">*</span></label>
+                                        <input type="text" required>
+                                    </div>
+                                    <div class="input-container">
+                                        <label>Sexo</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="input-container">
+                                        <label>Descripción Física<span class="required">*</span></label>
+                                        <input type="text" required>
+                                    </div>
                                 </div>
-                                <div class="input-container">
-                                    <label>Apodo<span class="required">*</span></label>
-                                    <input type="text" required>
-                                </div>
-                            </div>
-                            <div class="form-center">
-                                <div class="input-container">
-                                    <label>Edad aproximada<span class="required">*</span></label>
-                                    <input type="text" required>
-                                </div>
-                                <div class="input-container">
-                                    <label>Sexo</label>
-                                    <input type="text">
-                                </div>
-                                <div class="input-container">
-                                    <label>Descripción Física<span class="required">*</span></label>
-                                    <input type="text" required>
-                                </div>
-                            </div>
-                            <div class="form-bottom">                     
-                                <div class="input-container">
-                                    <label>Caracteristicas</label>
-                                    <select class="opciones">
-                                        <option>Color principal</option>
-                                    </select>
-                                    <label class="btn-carac"> + Añadir característica</label>
-                                </div>
-                                <div class="input-carac">
-                                    <label> </label>
-                                    <input type="text" placeholder="Ingresar característica">
-                                </div>
-                                <div class="input-file">
-                                    <label>Fotos</label>
-                                    <input type="file">
-                                    <label class="btn-file"> + Añadir Foto<label/>
+                                <div class="form-bottom">                     
+                                    <div class="input-container">
+                                        <label>Caracteristicas</label>
+                                        <select class="opciones">
+                                            <option>Color principal</option>
+                                        </select>
+                                        <label class="btn-carac"> + Añadir característica</label>
+                                    </div>
+                                    <div class="input-carac">
+                                        <label> </label>
+                                        <input type="text" placeholder="Ingresar característica">
+                                    </div>
+                                    <div class="input-file">
+                                        <label>Fotos</label>
+                                        <input type="file">
+                                        <label class="btn-file"> + Añadir Foto<label/>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-rules">
-                            <p>Los campos marcados con (*) son obligatorios</p>
-                            <button type="button">GUARDAR</button>
-                        </div>
-                    </form>
+                            <div class="form-rules">
+                                <p>Los campos marcados con (*) son obligatorios</p>
+                                <button type="button">GUARDAR</button>
+                            </div>
+                        </form>
+                        <p class="screen-text">No se encuentran mascotas disponibles. Ingrese una nueva mascota para continuar.</p>
+                    </div>
                 </div>
             </section>
         </main>

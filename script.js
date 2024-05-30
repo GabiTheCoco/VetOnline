@@ -1,6 +1,7 @@
 //ocultar el header según el scroll que se haga
 
 $(document).ready(function(){
+    $(".form").hide();
     let prevScrollPos = $(window).scrollTop();
     const header = $("header");
 
@@ -24,8 +25,10 @@ $(document).ready(function(){
 
     if (buttonState === "true") {
         $(".form-button").text("MOSTRAR MASCOTAS");
+        $(".form").show();
     } else {
         $(".form-button").text("INGRESAR MASCOTA");
+        $(".form").hide();
     }
 });
 
@@ -33,14 +36,25 @@ $(document).ready(function(){
 
 
 $(".form-button").on("click", function() {
-    let currentState = localStorage.getItem("form-button");
+    changeState();
 
-    if (currentState === "false") {
-        $(".form-button").text("INGRESAR MASCOTA");
-        localStorage.setItem("form-button", "true");
-    } else {
-        $(".form-button").text("MOSTRAR MASCOTAS");
-        localStorage.setItem("form-button", "false");
-    }
+    
 });
 
+function changeState(){
+    let currentState = localStorage.getItem("form-button");
+
+    console.log(currentState);
+
+    if (currentState === "false") {
+        $(".form-button").text("MOSTRAR MASCOTAS");
+        $(".form").show();
+        $(".screen-text").hide();
+        localStorage.setItem("form-button", "true");
+    } else {
+        $(".form-button").text("INGRESAR MASCOTAS");
+        $(".form").hide();
+        $(".screen-text").show();
+        localStorage.setItem("form-button", "false");
+    }
+}
