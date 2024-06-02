@@ -52,44 +52,49 @@
                                         <label>Mascota<span class="required">*</span></label>
                                         <div class="items-list">
                                             <label>
-                                                <input type="radio" name="animal" value="gatos" checked>
+                                                <input type="radio" name="animal" value="gatos" checked required>
                                                 Gato
                                             </label>
                                             <br>
                                             <label>
-                                                <input type="radio" name="animal" value="perros">
+                                                <input type="radio" name="animal" value="perros" required>
                                                 Perro
                                             </label>
                                         </div>
                                     </div>
                                     <div class="input-container">
                                         <label>Nombre<span class="required">*</span></label>
-                                        <input type="text" required>
+                                        <input type="text" placeholder="Ej: Manolo" required>
                                     </div>
                                     <div class="input-container">
                                         <label>Apodo<span class="required">*</span></label>
-                                        <input type="text" required>
+                                        <input type="text" placeholder="Ej: El terror del barrio" required>
                                     </div>
                                 </div>
                                 <div class="form-center">
                                     <div class="input-container">
                                         <label>Edad aproximada<span class="required">*</span></label>
-                                        <input type="text" required>
+                                        <input type="text" placeholder="Ej: 9 años" required>
                                     </div>
                                     <div class="input-container">
                                         <label>Sexo</label>
-                                        <input type="text">
+                                        <select class="opciones">
+                                            <option selected>Femenino</option>
+                                            <option>Masculino</option>
+                                        </select>
                                     </div>
                                     <div class="input-container">
                                         <label>Descripción Física<span class="required">*</span></label>
-                                        <input type="text" required>
+                                        <input type="text" placeholder="Tamaño, constitución, etc..." required>
                                     </div>
                                 </div>
                                 <div class="form-bottom">                     
                                     <div class="input-container">
                                         <label>Caracteristicas</label>
-                                        <select class="opciones">
-                                            <option>Color principal</option>
+                                        <select class="opciones caracteristicas" disabled>
+                                            <option selected>Color principal</option>
+                                            <option>Color secundario</option>
+                                            <option>Tipo de pelaje</option>
                                         </select>
                                         <label class="btn-carac"> + Añadir característica</label>
                                     </div>
@@ -100,13 +105,13 @@
                                     <div class="input-file">
                                         <label>Fotos</label>
                                         <input type="file">
-                                        <label class="btn-file"> + Añadir Foto<label/>
+                                        <label class="btn-file"> + Añadir Foto</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-rules">
                                 <p>Los campos marcados con (*) son obligatorios</p>
-                                <button type="button">GUARDAR</button>
+                                <button type="submit">GUARDAR</button>
                             </div>
                         </form>
                         <p class="screen-text">No se encuentran mascotas disponibles. Ingrese una nueva mascota para continuar.</p>
@@ -117,7 +122,7 @@
         <footer>
             <div class="image-container">
                 <!-- <img class="footer-img" src="./assets/img/footer.png"> -->
-                <img class="footer-img" src="./assets/svg/footer.svg">
+                <!-- <img class="footer-img" src="./assets/svg/footer.svg"> -->
             </div>
             <div class="footer-content"  id="contacto">
                 <div class="footer-title">

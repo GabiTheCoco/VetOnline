@@ -120,7 +120,7 @@
 
 .input-container input, .opciones{
     background-color: var(--fondo-main);
-    border-radius: 2em;
+    border-radius: 1em;
     outline: none;
     border: none;
     height: 2.5em;
@@ -139,7 +139,8 @@
 }
 
 .opciones{
-    padding: .5em;
+    padding: .7em;
+    cursor: pointer;
 }
 
 .input-file{

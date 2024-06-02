@@ -24,7 +24,11 @@ body{
     font-family: "Poppins", sans-serif;
     font-style: normal;
     background-color: var(--fondo-main);
-} 
+    display: flex;
+    flex-direction: column;
+    gap: 10em;
+    scrollbar-color: gray;
+}
 
 a {
     text-decoration: none; /* Elimina el subrayado */
