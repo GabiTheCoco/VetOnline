@@ -1,15 +1,77 @@
-.banner-section img{
+.banner-section{
+    background-image: url("/assets/img/imagen.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
-    height: auto;
     position: relative;
 }
 
+
 .titulo-banner{
     position: absolute;
-    top: 10%;
     color: var(--fondo-nav);
-    padding-top: 1em;
     font-weight: 800;
-    font-size: 2em;
     z-index: 1000;
+}
+
+@media (max-width: 768px) {
+
+    .banner-section{
+        min-height: 250px;
+        /* background-size: contain; */
+    }
+    
+    .titulo-banner{
+        top: 20%;
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .banner-section{
+        min-height: 450px;
+        /* background-size: contain; */
+    }
+    
+    .titulo-banner{
+        top: 21%;
+        font-size: 1.8em;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1366px){
+    .banner-section{
+        min-height: 500px;
+    }
+
+    .titulo-banner{
+        top: 15%;
+        padding-top: 1em;
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px){
+    .banner-section{
+        min-height: 550px;
+    }
+
+    .titulo-banner{
+        top: 15%;
+        padding-top: 1em;
+        font-size: 2.2em;
+    }
+}
+
+@media (min-width: 1921px) {
+    .banner-section{
+        min-height: 800px;
+    }
+
+    .titulo-banner{
+        top: 15%;
+        padding-top: 1em;
+        font-size: 3em;
+    }
 }

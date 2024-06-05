@@ -38,3 +38,19 @@ a {
 a:hover {
     color: inherit; /* Mantén el color del texto al pasar el cursor */
 }
+
+@media (max-width: 768px) {
+    
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+}
+
+@media (min-width: 1025px) and (max-width: 1366px){
+    
+}
+
+@media (min-width: 1920px) {
+    
+}

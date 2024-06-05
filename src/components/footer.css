@@ -5,10 +5,15 @@ footer{
     align-items: end;
     justify-content: center;
     position:relative;
+    background-image: url(/assets/svg/footer.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.image-container{
+/* .image-container{
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,13 +26,13 @@ footer{
 .image-container img{
     width: 100%;
     height: 100%;
-}
+} */
 
 .footer-content{
     position: absolute;
     height:60%;
     z-index: 2;
-    top: 230px;
+    top: 35%;
     color: white;
     display: flex;
     flex-direction: column;
@@ -94,35 +99,66 @@ footer{
 /* Para dispositivos con una resolución de hasta 768px (tabletas, móviles en posición vertical, etc.) */
 @media (max-width: 768px) {
     footer {
-        height: auto; /* Ajustar la altura según el contenido */
+        height: 300px;/* Ajustar la altura según el contenido */
     }
 
     .footer-content {
-        top: 30%; /* Ajustar la posición vertical */
+        top: 12%; /* Ajustar la posición vertical */
+        height: 80%;
+        /* width: 9%; */
+        font-size: .7em;
+        padding: 1em;
     }
 }
 
 /* Para dispositivos con una resolución entre 769px y 1024px (tabletas en posición horizontal, etc.) */
 @media (min-width: 769px) and (max-width: 1024px) {
     footer {
-        height: auto; /* Ajustar la altura según el contenido */
+        height: 400px;
     }
 
     .footer-content {
-        top: 35%; /* Ajustar la posición vertical */
+        top: 15%;
+        font-size: .9em;
+        height: 80%;
     }
 }
 
 /* Para dispositivos con una resolución de 1025px o superior (pantallas de escritorio, portátiles, etc.) */
-@media (min-width: 1025px) {
+@media (min-width: 1025px) and (max-width: 1366px){
     footer {
-        height: 600px; /* Mantener la altura original */
+        height: 450px; /* Mantener la altura original */
     }
 
-    .footer-content {
+    .footer-content{
+        top: 15%;
         height: 80%;
-        top: 15%; /* Mantener la posición vertical original */
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+
+    footer{
+        height: 600px;
     }
 
+    .footer-content{
+        top: 15%;
+        font-size: 1.2em;
+        height: 75%;
+    }
 
 }
+
+@media (min-width: 1920px) {
+    footer{
+        height: 750px;
+    }
+
+    .footer-content{
+        top: 15%;
+        font-size: 1.4em;
+        height: 80%;
+    }
+}
+
