@@ -18,12 +18,12 @@
 @media (max-width: 768px) {
 
     .banner-section{
-        min-height: 350px;
+        min-height: 400px;
     }
     
     .titulo-banner{
-        top: 20%;
-        font-size: 1.2em;
+        top: 25%;
+        font-size: 1.5em;
     }
 }
 

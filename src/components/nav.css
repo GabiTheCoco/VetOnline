@@ -42,8 +42,8 @@ nav{
 @media (max-width: 768px) {
 
     header{
-        height: 6%;
-        font-size: .7em;
+        height: 8%;
+        font-size: .9em;
     }
     
     nav{
@@ -52,7 +52,7 @@ nav{
     }
 
     .logo-container{
-        width: 75px;
+        width: 150px;
         height: auto;
     }
 
