@@ -99,14 +99,14 @@ footer{
 /* Para dispositivos con una resolución de hasta 768px (tabletas, móviles en posición vertical, etc.) */
 @media (max-width: 768px) {
     footer {
-        height: 300px;/* Ajustar la altura según el contenido */
+        height: 400px;/* Ajustar la altura según el contenido */
     }
 
     .footer-content {
-        top: 12%; /* Ajustar la posición vertical */
-        height: 80%;
+        top: 5%; /* Ajustar la posición vertical */
+        height: 95%;
         /* width: 9%; */
-        font-size: .7em;
+        font-size: .9em;
         padding: 1em;
     }
 }

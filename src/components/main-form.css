@@ -191,7 +191,7 @@
     .form-container{
         width: 90%;
         height: auto;
-        gap: 3em;
+        gap: 3em;    
     }
 
     .form{
@@ -203,20 +203,8 @@
     }
     
     .form-title{
-        font-size: 1em;
+        font-size: 1.3em;
     }
-
-    .form-button{
-        cursor: pointer;
-        outline: none;
-        color: var(--btn-primary);
-        border: 1px solid var(--btn-primary);
-        background: transparent;
-        width: 2em;
-        height: auto;
-    }
-    
-    
     
     .form-button{
         width: 15em;
@@ -233,9 +221,14 @@
         gap: 1.5em;
     }
 
-
-    .input-container input, .opciones, .input-carac input{
+    .input-container input, .opciones, .input-carac input, .input-file input{
         width: 100%;
+        font-size: 1.1em;
+    }
+
+    .items-container label, .input-container label, .input-file label, .input-carac label{
+        font-size: 1em;
+        padding-left: .3em;
     }
 
     .form-rules{
@@ -244,13 +237,14 @@
     
     .form-rules p{
         font-size: .8em;
-        width: 60%;
+        width: 40%;
         text-align: center;
     }
     
     .form-rules button{
         width: 8em;
-        height: 2.8em;
+        height: 2.5em;
+        font-size: 1.1em;
     }
 
     

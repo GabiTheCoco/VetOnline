@@ -1,5 +1,5 @@
 .banner-section{
-    background-image: url("/assets/img/imagen.png");
+    background-image: url(/assets/img/imagen.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -18,8 +18,7 @@
 @media (max-width: 768px) {
 
     .banner-section{
-        min-height: 250px;
-        /* background-size: contain; */
+        min-height: 350px;
     }
     
     .titulo-banner{
