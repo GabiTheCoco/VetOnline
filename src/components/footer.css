@@ -11,22 +11,6 @@ footer{
     background-repeat: no-repeat;
 }
 
-/* .image-container{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    z-index: -1;
-}
-
-
-.image-container img{
-    width: 100%;
-    height: 100%;
-} */
 
 .footer-content{
     position: absolute;
@@ -152,12 +136,12 @@ footer{
 
 @media (min-width: 1920px) {
     footer{
-        height: 750px;
+        height: 595px;
     }
 
     .footer-content{
         top: 15%;
-        font-size: 1.4em;
+        font-size: 1.3em;
         height: 80%;
     }
 }

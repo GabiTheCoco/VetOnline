@@ -48,7 +48,7 @@ nav{
     
     nav{
         width: 100%;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     .logo-container{
@@ -59,15 +59,16 @@ nav{
     .nav-options{
         width: 50%;
         cursor: pointer;
-        justify-content: space-evenly;
+        justify-content: center;
+        gap: 10%;
     }
     
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
     header{
-        height: 6%;
-        font-size: .8em;
+        height: 9%;
+        font-size: 1em;
     }
     
     nav{
@@ -75,7 +76,7 @@ nav{
     }
 
     .logo-container{
-        width: 100px;
+        width: 125px;
         height: auto;
     }
 
@@ -88,8 +89,8 @@ nav{
 
 @media (min-width: 1025px) and (max-width: 1366px){
     header{
-        height: 7%;
-        font-size: .95em;
+        height: 8%;
+        font-size: 1.050em;
     }
     
     nav{
@@ -110,8 +111,8 @@ nav{
 
 @media (min-width: 1367px) and (max-width: 1920px){
     header{
-        height: 8%;
-        font-size: 1em;
+        height: 9%;
+        font-size: 1.1em;
     }
     
     nav{
@@ -133,20 +134,20 @@ nav{
 @media (min-width: 1921px) {
     header{
         height: 9%;
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
     
     nav{
-        width: 70%;
+        width: 75%;
     }
 
     .logo-container{
-        width: 175px;
+        width: 185px;
         height: auto;
     }
 
     .nav-options{
-        width: 15%;
+        width: 20%;
         cursor: pointer;
         justify-content: space-between;
     }

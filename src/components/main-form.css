@@ -184,7 +184,16 @@
     color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+
+    .screen-text{
+        font-size: .9em;
+        text-align: center;
+    }
+
+    .form-screen{
+        min-height: 20vh;
+    }
 
     .form-container{
         width: 90%;
@@ -196,16 +205,21 @@
         gap: 2em;
     }
 
+    .form-header{
+        justify-content: space-between;
+    }
+
     .form-body{
         gap: 1.5em;
     }
+
     
     .form-title{
         font-size: 1.5em;
     }
     
     .form-button{
-        width: 15em;
+        width: 12em;
         height: 2.5em;
         font-size: .9em;
         border-radius: 3em;
@@ -248,11 +262,136 @@
     
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+    .screen-text{
+        font-size: 1.2em;
+        text-align: center;
+    }
     
+    .form-container{
+        width: 90%;
+        height: auto;
+        gap: 3em;    
+    }
+
+    .form{
+        gap: 2em;
+    }
+
+    .form-body{
+        gap: 1.5em;
+    }
+
+    .form-title{
+        font-size: 1.8em;
+    }
+    
+    .form-button{
+        width: 15em;
+        height: 2.5em;
+        font-size: 1em;
+        border-radius: 3em;
+    }
+
+    .form-top, .form-center, .form-bottom{
+        width: 100%;
+        height: 25%;
+        gap: 1.5em;
+    }
+
+    .input-container input, .opciones, .input-carac input, .input-file input{
+        width: 100%;
+        font-size: 1.1em;
+    }
+
+    .form-rules{
+        width: 100%;
+    }
+    
+    .form-rules p{
+        font-size: .8em;
+        width: 40%;
+        text-align: center;
+    }
+    
+    .form-rules button{
+        width: 8em;
+        height: 2.5em;
+        font-size: 1.1em;
+    }
 }
 
 @media (min-width: 1025px) and (max-width: 1366px){
+    .screen-text{
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+
+    .form-body{
+        height: 100%;
+        font-size: .9em;
+        justify-content: flex-start;
+    }
+  
+    .form-container{
+        width: 75%;
+        min-height: 30vh;
+    }
+    
+    .form-title{
+        font-size: 2em;
+    }
+    
+    .form-button{
+        width: 15em;
+        height: 2.5em;
+        font-size: 1.1em;
+        border-radius: 3em;
+    }
+
+    .form-top, .form-center, .form-bottom{
+        width: 95%;
+        height: 30%;
+        justify-content: space-between;
+        gap: 1.5em;
+    }
+
+    .input-container input, .opciones, .input-carac input, .input-file input{
+        width: 100%;
+        font-size: 1.3em;
+    }
+
+    .items-container label, .input-container label, .input-file label, .input-carac label{
+        font-size: 1em;
+        padding-left: .3em;
+    }
+
+    .form-rules{
+        width: 100%;
+    }
+    
+    .form-rules p{
+        font-size: .9em;
+        width: 40%;
+        text-align: center;
+    }
+    
+    .form-rules button{
+        width: 8em;
+        height: 2.5em;
+        font-size: 1.1em;
+    }
+    
+    
+}
+
+@media (min-width: 1367px) and (max-width: 1920px){
+    .form-body{
+        height: 100%;
+        font-size: 1.1em;
+        justify-content: flex-start;
+    }
   
     .form-container{
         width: 75%;
@@ -260,30 +399,103 @@
     }
     
     .form-title{
-        font-size: 2em;
+        font-size: 2.2em;
     }
-    
     
     .form-button{
         width: 15em;
         height: 2.5em;
-        font-size: .8em;
+        font-size: 1.3em;
         border-radius: 3em;
     }
 
     .form-top, .form-center, .form-bottom{
-        width: 90%;
-        height: 33%;
+        width: 95%;
+        height: 30%;
+        justify-content: space-between;
+        gap: 1.5em;
     }
 
-    
-    
-}
+    .input-container input, .opciones, .input-carac input, .input-file input{
+        width: 100%;
+        font-size: 1.3em;
+    }
 
-@media (min-width: 1367px) and (max-width: 1920px){
+    .items-container label, .input-container label, .input-file label, .input-carac label{
+        font-size: 1.1em;
+        padding-left: .3em;
+    }
+
+    .form-rules{
+        width: 98%;
+    }
     
+    .form-rules p{
+        font-size: 1.1em;
+        width: 40%;
+        text-align: center;
+    }
+    
+    .form-rules button{
+        width: 8em;
+        height: 2.5em;
+        font-size: 1.4em;
+    }
 }
 
 @media (min-width: 1921px) {
+    .form-body{
+        height: 100%;
+        font-size: 1.1em;
+        justify-content: flex-start;
+    }
+  
+    .form-container{
+        width: 75%;
+        height: 75vh;
+    }
     
+    .form-title{
+        font-size: 2.4em;
+    }
+    
+    .form-button{
+        width: 15em;
+        height: 2.5em;
+        font-size: 1.4em;
+        border-radius: 3em;
+    }
+
+    .form-top, .form-center, .form-bottom{
+        width: 95%;
+        height: 30%;
+        justify-content: space-between;
+        gap: 1.5em;
+    }
+
+    .input-container input, .opciones, .input-carac input, .input-file input{
+        width: 100%;
+        font-size: 1.3em;
+    }
+
+    .items-container label, .input-container label, .input-file label, .input-carac label{
+        font-size: 1.2em;
+        padding-left: .3em;
+    }
+
+    .form-rules{
+        width: 98%;
+    }
+    
+    .form-rules p{
+        font-size: 1.2em;
+        width: 40%;
+        text-align: center;
+    }
+    
+    .form-rules button{
+        width: 8em;
+        height: 2.5em;
+        font-size: 1.5em;
+    }
 }
