@@ -267,6 +267,10 @@
         font-size: 1.2em;
         text-align: center;
     }
+
+    .form-screen{
+        min-height: 20vh;
+    }
     
     .form-container{
         width: 90%;
@@ -327,6 +331,9 @@
         text-align: center;
     }
 
+    .form-screen{
+        min-height: 20vh;
+    }
 
     .form-body{
         height: 100%;
@@ -387,9 +394,18 @@
 }
 
 @media (min-width: 1367px) and (max-width: 1920px){
+    .screen-text{
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    .form-screen{
+        min-height: 20vh;
+    }
+    
     .form-body{
         height: 100%;
-        font-size: 1.1em;
+        font-size: 1em;
         justify-content: flex-start;
     }
   
@@ -405,7 +421,7 @@
     .form-button{
         width: 15em;
         height: 2.5em;
-        font-size: 1.3em;
+        font-size: 1.2em;
         border-radius: 3em;
     }
 
@@ -439,11 +455,20 @@
     .form-rules button{
         width: 8em;
         height: 2.5em;
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
 }
 
 @media (min-width: 1921px) {
+    .screen-text{
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    .form-screen{
+        min-height: 20vh;
+    }
+    
     .form-body{
         height: 100%;
         font-size: 1.1em;
