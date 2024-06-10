@@ -2,8 +2,9 @@
 .form{
     display: flex;
     flex-direction: column;
-    height:100%;
+    justify-content: space-be;
     width: 100%;
+    height: 100%;
 }
 
 .form-container{
@@ -14,8 +15,6 @@
 }
 
 .form-screen{
-    height: 80%;
-    min-height: 20%;
     width: 100%;
     border-radius: 1.5em;
     padding: 1em;
@@ -326,25 +325,32 @@
 }
 
 @media (min-width: 1025px) and (max-width: 1366px){
+    .form{
+        gap: 2em;
+    }
+
     .screen-text{
-        font-size: 1.4em;
+        font-size: 1.1em;
         text-align: center;
     }
 
     .form-screen{
-        min-height: 20vh;
+        min-height: 60vh;
+        box-sizing: border-box;
     }
 
     .form-body{
         height: 100%;
         font-size: .9em;
-        justify-content: flex-start;
+        gap: 2em;
     }
   
     .form-container{
         width: 75%;
-        min-height: 30vh;
+        min-height: 75vh;
     }
+
+
     
     .form-title{
         font-size: 2em;
@@ -353,7 +359,7 @@
     .form-button{
         width: 15em;
         height: 2.5em;
-        font-size: 1.1em;
+        font-size: 1em;
         border-radius: 3em;
     }
 
@@ -366,11 +372,11 @@
 
     .input-container input, .opciones, .input-carac input, .input-file input{
         width: 100%;
-        font-size: 1.3em;
+        font-size: .9em;
     }
 
     .items-container label, .input-container label, .input-file label, .input-carac label{
-        font-size: 1em;
+        font-size: .9em;
         padding-left: .3em;
     }
 
@@ -387,7 +393,7 @@
     .form-rules button{
         width: 8em;
         height: 2.5em;
-        font-size: 1.1em;
+        font-size: 1em;
     }
     
     
@@ -395,17 +401,15 @@
 
 @media (min-width: 1367px) and (max-width: 1920px){
     .screen-text{
-        font-size: 1.4em;
         text-align: center;
     }
 
     .form-screen{
-        min-height: 20vh;
+        height: 80%;
     }
     
     .form-body{
         height: 100%;
-        font-size: 1em;
         justify-content: flex-start;
     }
   
@@ -434,11 +438,11 @@
 
     .input-container input, .opciones, .input-carac input, .input-file input{
         width: 100%;
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     .items-container label, .input-container label, .input-file label, .input-carac label{
-        font-size: 1.1em;
+        font-size: 1em;
         padding-left: .3em;
     }
 
@@ -466,7 +470,7 @@
     }
 
     .form-screen{
-        min-height: 20vh;
+        min-height: 80%;
     }
     
     .form-body{
