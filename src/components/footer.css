@@ -92,6 +92,15 @@ footer{
         /* width: 9%; */
         font-size: .9em;
         padding: 1em;
+        text-align: center;
+    }
+
+    .footer-contact{
+        text-wrap: wrap;
+    }
+
+    .footer-contact img{
+        font-size: .9em;
     }
 }
 
